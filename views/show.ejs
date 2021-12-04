@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/css/styles.css">
 </head>
+
 <body>
-  <img src=<%= pokemon.img %>>
+  <button><a href='/pokemon'>Back to Homepage</a></button>
+  <button></button>
+  <img src=<%=foundPoke.img %>>
   <ul style="list-style: none;">
-    <li>NAME: <%= foundPoke.name %></li>
-    <li>TYPE: <%= foundPoke.type %></li>
-    <li>HP: <%= foundPoke.stats.hp %></li> 
-    <li>ATTACK: <%= foundPoke.stats.attack %></li>
-    <li>DEFENSE: <%= foundPoke.stats.defense %></li>
-   </ul>
+    <li>NAME: <%= foundPoke.name %>
+    </li>
+    <li>TYPE: <%= foundPoke.type %>
+    </li>
+    <li>HP: <%= foundPoke.stats.hp %>
+    </li>
+    <li>ATTACK: <%= foundPoke.stats.attack %>
+    </li>
+    <li>DEFENSE: <%= foundPoke.stats.defense %>
+    </li>
+  </ul>
 </body>
+
 </html>

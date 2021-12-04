@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="/public/css/styles.css">
+  <title>Edit Pokemon</title>
+</head>
+<body>
+  <form action='/pokemon/<%= foundPoke.id%>?_method=PUT' method="POST">
+    <input type="text" name="img" value="<%= foundPoke.img%>" hidden />
+    Name: <input type="text" name="name" value="<%=foundPoke.name%>"/>
+    Type: <input type="text" name="type" value="<%=foundPoke.type%>"/>
+    HP: <input type="text" name="hp"   value="<%=foundPoke.stats.hp%>"/>
+    Attack: <input type="text" name="attack" value="<%=foundPoke.stats.attack%>"/>
+    Defense: <input type="text" name="defense" value="<%=foundPoke.stats.defense%>"/>
+    <input type="submit" value="update" />
+  </form>
+</body>
+</html>
