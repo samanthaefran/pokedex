@@ -1,3 +1,31 @@
+*{
+  box-sizing: border-box;
+}
+.nav{
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+body {
+  background-color: rgb(60, 90, 166);
+  color: rgb(199, 160, 8);
+  font-size: 2em;
+}
+
+
 img {
-  max-width: 10em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  float: left;
+  width:  100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.pokedex-full{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
